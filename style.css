@@ -1,0 +1,62 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+button {
+    width: 200px;
+    height: 35px;
+}
+
+#board{
+    position: relative;
+    top:40px;
+}
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+    /* Style the links inside the tab */
+    div.tab a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+        /* Change background color of links on hover */
+        div.tab a:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        div.tab a:focus, .active {
+            background-color: #ccc;
+        }
+
+/* Style the tab content */
+.tabcontent {
+    display: block;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.content-wrapper{
+    background-color: #ccc;
+    padding: 10px;
+    margin: 10px;
+    min-height: 250px;
+}
+
+h1{
+    text-align: center;
+    margin: 5px;
+}
