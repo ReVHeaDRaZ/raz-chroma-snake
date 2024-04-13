@@ -46,7 +46,7 @@ function newGame() {
     gameOver = false;
     document.addEventListener("keyup", changeDirection);
     //update loop
-    gameTimer = setInterval(update, 100); //100 milliseconds
+    gameTimer = setInterval(update, 150);
 }
 
 function update() {

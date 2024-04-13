@@ -1,5 +1,7 @@
 body {
-    font-family: "Lato", sans-serif;
+    /* font-family: "Lato", sans-serif; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
 }
 
 button {
@@ -46,7 +48,6 @@ div.tab {
     display: block;
     padding: 6px 12px;
     border: 1px solid #ccc;
-    border-top: none;
 }
 
 .content-wrapper{
