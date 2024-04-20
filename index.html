@@ -3,6 +3,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Raz's Razer Chroma Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web applet for Razer Chroma RGB Keyboards to display custom particle patterns and play snake using the leds." />
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="ChromaSDKImpl.js"></script>
     <script src="KeyboardEffects.js"></script>
@@ -23,8 +25,6 @@
 </head>
 <body onload="chromaSDK.init()" onbeforeunload="chromaSDK.uninit()">
     <h1>RaZ's Razer Chroma Web App</h1>
-    
-    <div id="table" style="margin:auto; width:718px; padding:50px; text-align:center">
 
         <div id="Keyboards" class="tabcontent">
             <div class="content-wrapper">
@@ -34,15 +34,16 @@
             </div>
             <div class="content-wrapper">
                 <h2>Custom Particle Patterns</h2>
-                <p><button onclick="createRaZBalls();">RaZ Bouncing Balls</button></p>
-                <p><button onclick="createRaZFountain();">RaZ Fountain</button></p>
-                <p><button onclick="createRaZComets();">RaZ Comets</button></p>
-                <p><button onclick="createRaZExplosion();">RaZ Explosion</button></p>
-                <p><button onclick="createRaZRandomExplosion();">RaZ Random Color Explosion</button></p>
+                <div class="flex-row">
+                    <p><button onclick="createRaZBalls();">RaZ Bouncing Balls</button></p>
+                    <p><button onclick="createRaZFountain();">RaZ Fountain</button></p>
+                    <p><button onclick="createRaZComets();">RaZ Comets</button></p>
+                    <p><button onclick="createRaZExplosion();">RaZ Explosion</button></p>
+                    <p><button onclick="createRaZRandomExplosion();">RaZ Random Color Explosion</button></p>
+                </div>
             </div>
         </div>
 
-    </div>
    
     <script src="RazChromaParticles.js"></script>
     <script src="snake.js"></script>

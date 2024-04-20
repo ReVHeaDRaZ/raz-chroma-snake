@@ -1,24 +1,54 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
 body {
     /* font-family: "Lato", sans-serif; */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 2px;
+    background: linear-gradient(#cecece, #f7de1ef1);
+    background: -webkit-linear-gradient(#000000, #4e4e4ef1);
+    background: -moz-linear-gradient(#cecece, #f7de1ef1);
 }
 
 button {
+    border-radius: 10px;
+    border: 1px solid transparent;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 0.4em .5em;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.10em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(0, 0, 0, 0.904);
+    background: linear-gradient(#cecece, #f7de1ef1);
+    background: -webkit-linear-gradient(#cecece, #f7de1ef1);
+    background: -moz-linear-gradient(#cecece, #f7de1ef1);
+    filter: drop-shadow(0 0 .25em #f7df1eaa);
+    opacity: .75;
+    cursor: pointer;
+    will-change: border-color filter;
+    transition: border-color 0.25s;
+    transition: filter 300ms;
     width: 200px;
-    height: 35px;
+    height: 55px;
 }
-
+button:hover, #app a:hover {
+    border-color: #ffffff;
+    background: linear-gradient(#e2e2e2, #f7de1efb);
+    background: -webkit-linear-gradient(#e2e2e2, #f7de1efb);
+    background: -moz-linear-gradient(#e2e2e2, #f7de1efb);
+    filter: drop-shadow(0 0 1em #f7df1eaa);
+}
 #board{
     position: relative;
     top:40px;
+    z-index: 500;
 }
 
 /* Style the tab */
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
 }
 
     /* Style the links inside the tab */
@@ -45,19 +75,43 @@ div.tab {
 
 /* Style the tab content */
 .tabcontent {
-    display: block;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
+    padding: 6px 6px;
+    width: 100%;
 }
 
 .content-wrapper{
-    background-color: #ccc;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    user-select: none;
+    margin: 40px auto;
+    width: 75%;
+    min-height: 300px;
     padding: 10px;
-    margin: 10px;
-    min-height: 250px;
-}
-
+    border-radius: 15px;
+    border: black 3px solid;
+    color: white;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0.0em 0.0em 2.5em rgba(172, 255, 47, 0.5);
+    z-index: 100;
+  }
+  h2{
+    font-size: 2.5rem;
+    color: greenyellow;
+    padding: 0;
+    margin-bottom: 10px;
+  }
 h1{
+    font-size: 3rem;
     text-align: center;
     margin: 5px;
+    color: greenyellow;
+}
+
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
